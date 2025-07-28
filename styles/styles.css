@@ -35,13 +35,13 @@ main {
 
 @font-face {
     font-family: Marca;
-    src: url(/assets/EBGaramond-Italic-VariableFont_wght.ttf);
+    src: url(../assets/EBGaramond-Italic-VariableFont_wght.ttf);
     font-size: large;
 }
 
 @font-face {
     font-family: Titulos;
-    src: url(/assets/EBGaramond-VariableFont_wght.ttf);
+    src: url(../assets/EBGaramond-VariableFont_wght.ttf);
 }
 
 li {
