@@ -1,18 +1,36 @@
 
-
-main {
-    background-color: #FCFCF2;
-    height: 2500px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+
+main {
+    height: 2700px;
+}
+
+.envios {
     background-color: #8D253E;
-    margin: 0;
+    display: block;
+}
+
+#envios {
+    font-family: Titulos;
+    color: #FCFCF2;
+    font-size: 3vh;
+    text-align: center;
 }
 
 .encabezado {
+    width: 1440px;
+    height: 15vh;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    flex-wrap: wrap;
 }
 
 @font-face {
@@ -28,72 +46,70 @@ header {
 
 li {
     list-style: none;
-    background-color: #8D253E;
-    padding: 0.1rem 8rem;
-    margin: 0;
-    align-items: stretch;
 }
 
 ul {
-    background-color: #8D253E;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    border: #a75568 groove;
+    gap: 2vh;
+    width: 30vw;
     height: 5vh
 }
 
 a {
     text-decoration: none;
-    color: #FCFCF2;
+    color: #000;
     font-family: Titulos;
     font-size: 3vh;
+    font-weight: bold;
 }
 
 h1 {
-    color: #FCFCF2;
+    color: #8D253E;
     font-family: Marca;
+    font-size: 8vh;
+    padding: 2vh;
+    flex: 1;
     text-align: center;
-    font-size: 15vh;
-    display: inline-flex;
 }
 
 h2{
     font-family: Titulos;
-    color:#8D253E;
+    color: #000;
+    font-weight: bold;
     font-size: 5vh;
-    padding-top: 2vw;
+    padding-top: 7vh;
+    padding-left: 2vw;
+    padding-bottom: 3vh;
 }
 
 h3{
+    height: 15vh;
+    background-image: url(../assets/backfragancias.jpg);
     font-family: Titulos;
-    color: #8D253E;
+    color: #FCFCF2;
     font-size: 5vh;
-    padding-top: 2vw;
+    text-align: center;
 }
 
 #Logo {
-    height: 20vh;
+    height: 10vh;
     width: auto;
-    margin-top: 10vh;
-    margin-right: 3vw;
+    padding-bottom: 1vh;
 }
 
 article{
-    border-style: ridge;
-    border-color: #8D253E;
     width: 50vh;
     height: 60vh;
     background-color:white;
     border-radius: 15px;
+    box-shadow: 0 6px 16px #0000001A;
     position: relative;
     margin: 10px;
     justify-content: space-between;
     padding: 2vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 70% 15% 15%;
+    grid-template-rows: 60% 15% 15% 10%;
 }
 
 .perfume {
@@ -106,14 +122,20 @@ article{
 }
 
 .rrss {
-    width: 3vh;
+    width: 5vh;
     height: auto;
+    padding: 1vh;
+}
+
+.redes {
+    margin-right: 3vw;
 }
 
 .nombre{
     font-family: Titulos;
-    font-size: 3vh;
+    font-size: 3.5vh;
     color: #8D253E;
+    text-align: center;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     margin: 0;
@@ -125,20 +147,31 @@ article{
     font-size: 4vh;
     color: #8D253E;
     font-weight: bold;
-    grid-column: 1 / 2;
+    text-align: center;
+    grid-column: 1 / 3;
     grid-row: 3 / 4;
     margin: 0;
     align-self: center;
 }
 
 .boton{
-    background-color: #8D253E;
     border-style: solid;
+    border-color: #8D253E;
     border-radius: 999px;
     padding: 0.5vh 2vw;
     margin: 0;
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
     align-self: center;
     justify-self: center;
+    font-family: Titulos;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #8D253E
+}
+
+.boton:hover {
+    background-color: #8D253E;
     font-family: Titulos;
     font-size: 2vh;
     font-weight: bold;
@@ -157,6 +190,7 @@ p{
     font-size: 3vh;
     color: black;
     font-weight: bold;
+    margin-left: 3vw;
 }
 
 .pregunta{
@@ -173,12 +207,16 @@ p{
 }
 
 footer {
-    padding-top: 4vw;
+    background-color: #8D253E;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .articulos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 10vh;
 }
