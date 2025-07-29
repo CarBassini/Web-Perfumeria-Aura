@@ -18,7 +18,7 @@
 
     <section class="encabezado">
       <a href="../index.html">
-        <img id="Logo" src="../assets/logo.png" alt="Logo de Aura" title="Logo">
+        <img id="Logo" src="../assets/logonuevo.png" alt="Logo de Aura" title="Logo">
       </a>
       <h1>Perfumería Aura</h1>
 
@@ -43,28 +43,43 @@
   
   <main>
 
-    <form>
     <h2>Completa tus datos:</h2>
-      <hr>
-      <label>Nombre:</label>
-      <input id="nombre" type="text" placeholder="Nombre">
 
-      <label>Apellido:</label>
-      <input id="apellido" type="text" placeholder="Apellido">
+    <form class="perfil">
+      
+      <div class= "dato name">
+        <label>Nombre:</label>
+        <input id="nombre" type="text" placeholder="Nombre" required>
+      </div>
 
-      <label>Fecha de Nacimiento:</label>
-      <input id="birthday" type="date" value="dd/mm/aaaa" max="2007-12-31" min="1925-01-01" required>
+      <div class="dato apellido">
+        <label>Apellido:</label>
+        <input id="apellido" type="text" placeholder="Apellido" required>
+      </div>
 
-      <label>Género:</label>
-      <input id="genero" type="radio" name="genero">Masculino
-      <input id="genero" type="radio" name="genero">Femenino
-      <input id="genero" type="radio" name="genero">Prefiero no decirlo
+      <div class="dato fechadenac">
+        <label>Fecha de Nacimiento:</label>
+        <input id="birthday" type="date" value="dd/mm/aaaa" max="2007-12-31" min="1925-01-01" required>
+      </div>
 
-      <label>E-Mail:</label>
-      <input type="email">
+      <div class="dato genero">
+        <label>Género:</label>
+        <input id="genero" type="radio" name="genero">Masculino
+        <input id="genero" type="radio" name="genero">Femenino
+        <input id="genero" type="radio" name="genero">Prefiero no decirlo
+      </div>
 
-      <label>Contraseña:</label>
-      <input type="password">
+      <div class="dato email">
+        <label>E-Mail:</label>
+        <input type="email">
+      </div>
+
+      <div class="dato contraseña">
+        <label>Contraseña:</label>
+        <input type="password">
+      </div>
+
+      <input class="registro" type="button" value="Registrarme">
 
     </form>
 
