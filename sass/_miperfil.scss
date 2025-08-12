@@ -1,0 +1,40 @@
+@use "variables" as v;
+@use "placeholders";
+@import "header";
+@import "footer";
+
+main {
+    h2{
+    font-family: v.$fuenteprincipal;
+    color: #000;
+    font-weight: bold;
+    font-size: 5vh;
+    padding-top: 5vh;
+    padding-left: 2vw;
+    }
+
+    .perfil {
+        height: 70vh;
+        width: 80vw;
+        background-color: v.$colorsecundario;
+        border-style: ridge;
+        border-radius: 15px;
+        display: block;
+        padding: 2vw;
+        margin: auto;
+        .dato {
+            font-family: v.$fuenteprincipal;
+            font-size: 3vh;
+            padding: 2vh;
+        }
+        .registro {
+            font-family: v.$fuenteprincipal;
+            font-size: 3vh;
+            margin-top: 4vh;
+            margin-left: 6vw;
+            padding: 1vh;
+        }
+    }
+
+
+}

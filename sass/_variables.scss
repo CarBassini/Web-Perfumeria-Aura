@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Garamond Italic;
+    src: url(../assets/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url(../assets/EBGaramond-VariableFont_wght.ttf);
+}
+
+$fuentemarca: Garamond Italic;
+$fuenteprincipal: Garamond;
+
+$colorprincipal: #8D253E;
+$colorsecundario: #FCFCF2;
+
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+main {
+    height: 2700px;
+}
+
+@mixin mobile {
+    @media (max-width: 430px) {
+        @content;
+    }
+}
+
+
+

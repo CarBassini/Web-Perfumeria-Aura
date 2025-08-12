@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Perfumería Aura - Inicio</title>
   <link rel="shortcut icon" href="./assets/diamante.png" type="image/x-icon">
 </head>
@@ -22,18 +24,18 @@
       <img id="Logo" src="./assets/logonuevo.png" alt="Logo de Aura" title="Logo">
       <h1>Perfumería Aura</h1>
 
-      <ul>
-        <li>
-          <a href="./pages/productos.html">Productos</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
         </li>
-        <li>
-          <a href="./pages/miperfil.html">Mi Perfil</a>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/miperfil.html">Mi Perfil</a>
         </li>
-        <li>
-          <a href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
         </li>
-        <li>
-          <a href="./pages/contacto.html">Contacto</a>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
         </li>
       </ul>
 
@@ -62,46 +64,46 @@
       </button>
     </div>
 
-      <h2>Promociones</h2>
+    <h2 data-aos="fade-up">Promociones</h2>
 
     <section class="articulos">
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume2.jpg" alt="">
         <p class="nombre"> Yara Lattafa</p>
         <p class="precio"> Precio: $52.689</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume3.jpg" alt="">
         <p class="nombre"> Sakeena Lattafa</p>
         <p class="precio"> Precio: $65.999</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume4.jpg" alt="">
         <p class="nombre"> Mayar Lattafa</p>
         <p class="precio"> Precio: $69.999</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume7.jpg" alt="">
         <p class="nombre"> Club de Nuit Intense Man</p>
         <p class="precio"> Precio: $76.120</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume13.jpg" alt="">
         <p class="nombre"> Ishq Al Shuyukh Gold</p>
         <p class="precio"> Precio: $64.625</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume14.jpg" alt="">
         <p class="nombre"> Maahir Black Lattafa</p>
         <p class="precio"> Precio: $48.125</p>
@@ -110,46 +112,46 @@
 
     </section>
 
-    <h2>Nuevos Ingresos</h2>
+    <h2 data-aos="fade-up">Nuevos Ingresos</h2>
 
     <section class="articulos">
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume9.jpg" alt="">
         <p class="nombre"> Ventana Pour Homme</p>
         <p class="precio"> Precio: $89.919</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume10.jpg" alt="">
         <p class="nombre"> Bade'e Al Oud Amethyst</p>
         <p class="precio"> Precio: $71.999</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume11.webp" alt="">
         <p class="nombre"> Exotic Orientica Premium</p>
         <p class="precio"> Precio: $185.670</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume12.webp" alt="">
         <p class="nombre"> Velvet Gold Orientica</p>
         <p class="precio"> Precio: $155.608</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume15.jpg" alt="">
         <p class="nombre"> Fakhar Rose Lattafa</p>
         <p class="precio"> Precio: $68.750</p>
         <p class="boton"> Ver producto</p>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <img class="perfume" src="./assets/perfume16.jpg" alt="">
         <p class="nombre"> Chants Tenderina Maison</p>
         <p class="precio"> Precio: $35.750</p>
@@ -181,6 +183,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

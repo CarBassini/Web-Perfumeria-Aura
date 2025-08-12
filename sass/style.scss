@@ -1,0 +1,17 @@
+@use "variables" as v;
+@use "placeholders";
+@use "header";
+@use "footer";
+@use "home";
+@use "productos";
+@use "nosotros";
+@use "miperfil";
+@use "contacto";
+
+
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,55 @@
+@use "variables" as v;
+@use "placeholders";
+
+header {
+    .envios {
+    background-color: v.$colorprincipal;
+    display: block;
+        p {
+            @extend %estilo-p; 
+        }
+        #envios {
+            font-family: v.$fuenteprincipal;
+            color: v.$colorsecundario;
+            font-size: 3vh;
+            text-align: center;
+        }
+    }
+
+    .encabezado {
+        width: 100%;
+        height: 15vh;
+        margin: 0;
+        padding: 1vh;
+        margin-bottom: 3vh;
+        @extend %flr; 
+
+        #Logo {
+        height: 10vh;
+        width: auto;
+        padding-bottom: 1vh;
+        }
+
+        h1 {
+            font-family: v.$fuentemarca;
+            color: v.$colorprincipal;
+            @extend %estilo-h1;
+        }
+
+        ul {
+            display: flex;
+            gap: 0.5vh;
+            padding: 1%;
+            width: 40%;
+            height: 3vh;
+            li {
+                list-style: none;
+                a {
+                    @extend %estilo-a;
+                }
+            }
+        }
+    }
+
+}
+

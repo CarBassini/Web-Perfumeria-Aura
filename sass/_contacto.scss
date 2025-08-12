@@ -1,0 +1,32 @@
+@use "variables" as v;
+@use "placeholders";
+@import "header";
+@import "footer";
+
+main {
+    h2{
+        font-family: v.$fuenteprincipal;
+        color: #000;
+        @extend %estilo-h2; 
+    }
+
+    .preguntas{
+        margin-left: 2vw;
+        p {
+            @extend %estilo-p;
+        }
+        .pregunta{
+            font-family: v.$fuenteprincipal
+            font-size 4vh;
+            color: black;
+            font-weight: bold;
+        }
+
+        .respuesta{
+            font-family: v.$fuenteprincipal
+            font-size 3vh;
+            color: black;
+        }
+    }
+
+}

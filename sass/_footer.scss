@@ -1,0 +1,32 @@
+@use "variables" as v;
+@use "placeholders";
+
+footer {
+    background-color: v.$colorprincipal;
+    width: 100%;
+    height: 7vh;
+    @extend %flr;
+
+    .derechos{
+        font-family: v.$fuenteprincipal;
+        font-size: 3vh;
+        color: black;
+        font-weight: bold;
+        margin-left: 3vw;
+    }
+
+    .redes {
+        margin-right: 3vw;
+
+        a {
+            @extend %estilo-a;
+            .rrss {
+                width: 5vh;
+                height: auto;
+                padding: 1vh;
+            }
+        }
+        
+    }
+
+}

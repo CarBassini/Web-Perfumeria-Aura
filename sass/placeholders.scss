@@ -1,0 +1,46 @@
+@use "variables" as v;
+
+%flr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%estilo-h1 {
+    font-size: 8vh;
+    font-weight: bold;
+    padding: 2vh;
+    flex: 1;
+    text-align: start;
+}
+
+%estilo-h2 {
+    font-weight: bold;
+    font-size: 5vh;
+    padding-top: 5vh;
+    padding-left: 2vw;
+}
+
+%estilo-h3 {
+    height: 15vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%estilo-p {
+    font-family: v.$fuenteprincipal;
+    font-size: 4vh;
+    color: black;
+    text-align: justify;
+}
+
+%estilo-a {
+    text-decoration: none !important;
+    color: #000 !important;
+    font-family: v.$fuenteprincipal;
+    font-size: 3vh;
+    font-weight: bold;
+}

@@ -1,0 +1,108 @@
+@use "variables" as v;
+@use "placeholders";
+@import "header";
+@import "footer";
+
+main {
+    p{
+        @extend %estilo-p; 
+    }
+
+    h2{
+        font-family: v.$fuenteprincipal;
+        color: #000;
+        @extend %estilo-h2; 
+    }
+
+    .quienessomos {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    align-items: center;
+        .somos {
+        font-size: 5vh;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        align-self: end;
+        }
+        .textosomos {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 2vw;
+        }
+        .dueños {
+            height: 50vh;
+            width: auto;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+    }
+
+    .nuestrahistoria {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    align-items: center;
+        .historia {
+            font-size: 5vh;
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+        .textohistoria {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            margin-right: 2vw;
+        }
+        .laboratorio {
+            height: 50vh;
+            width: auto;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 2vw;
+        }
+    }
+    
+    @include v.mobile {
+        main {
+            .quienessomos {
+                height: 50vh;
+                .somos {
+                    font-size: 4vh;
+                }
+                .textosomos {
+                    font-size: 2vh;
+                }
+                .dueños {
+                    height: 30vh;
+                }
+            }
+
+            .nuestrahistoria {
+                height: 50vh;
+                grid-template-rows: 1fr 2fr 1fr;
+                margin-top: 10vh;
+                .historia {
+                    font-size: 4vh;
+                }
+                .laboratorio {
+                    height: 40vh;
+                    grid-column: 1 / 3;
+                    grid-row: 3 / 4;
+                }
+                .textohistoria {
+                    font-size: 2vh;
+                    grid-column: 1 / 3;
+                    grid-row: 2 / 3;
+                    margin: 0 2vw;
+                }
+            }
+        }
+    }
+
+}
+

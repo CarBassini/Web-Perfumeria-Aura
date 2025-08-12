@@ -1,0 +1,108 @@
+
+@media (max-width: 430px) {
+
+/* media queries generales*/
+
+    main {
+        height: 1500px;
+    }
+
+    .encabezado {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .encabezado ul {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        font-size: 2vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+
+/* media queries pagina Index*/
+
+    .articulos {
+        row-gap: 3vh;
+    }
+
+    article{
+        width: 20vh;
+        height: 35vh;
+    }
+
+    .perfume {
+        width: 90%;
+        padding: 5px;
+}
+
+    .nombre{
+        font-size: 2vh;
+}
+
+    .precio{
+        font-size: 2vh;
+    }
+
+    .boton{
+        padding: 0.3vh 1.5vw;
+        font-size: 1.5vh;
+}
+
+
+/* media queries pagina Quienes Somos*/
+
+    .quienessomos {
+        height: 50vh;
+    }
+
+    .somos {
+        font-size: 4vh;
+    }
+
+    .textosomos {
+        font-size: 2vh;
+    }
+
+    .dueños {
+        height: 30vh;
+    }
+
+    .nuestrahistoria {
+        height: 50vh;
+        grid-template-rows: 1fr 2fr 1fr;
+        margin-top: 10vh;
+    }
+
+    .historia {
+        font-size: 4vh;
+    }
+
+    .laboratorio {
+        height: 40vh;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .textohistoria {
+        font-size: 2vh;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin: 0 2vw;
+    }
+
+}
+
+
