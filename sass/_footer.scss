@@ -12,14 +12,18 @@ footer {
         font-size: 3vh;
         color: black;
         font-weight: bold;
-        margin-left: 3vw;
+        margin: auto;
     }
 
     .redes {
         margin-right: 3vw;
 
         a {
-            @extend %estilo-a;
+            text-decoration: none;
+            color: #000;
+            font-family: v.$fuenteprincipal;
+            font-size: 3vh;
+            font-weight: bold;
             .rrss {
                 width: 5vh;
                 height: auto;
@@ -27,6 +31,21 @@ footer {
             }
         }
         
+    }
+
+    @include v.mobile {
+        footer {
+            height: 4vh;
+            .derechos{
+                font-size: 2vh;
+            }
+            .redes a {
+                font-size: 2vh;
+                .rrss {
+                    width: 3vh;
+                }
+            }
+        }
     }
 
 }

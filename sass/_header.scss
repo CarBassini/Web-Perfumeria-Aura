@@ -45,11 +45,75 @@ header {
             li {
                 list-style: none;
                 a {
-                    @extend %estilo-a;
+                    text-decoration: none;
+                    color: #000;
+                    font-family: v.$fuenteprincipal;
+                    font-size: 3vh;
+                    font-weight: bold;
                 }
             }
         }
     }
 
+
+    @include v.mobile {
+        header {
+            .envios #envios {
+                font-size: 1vh;
+            }
+            .encabezado {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .encabezado ul {
+                flex: 1 1 100%;
+                justify-content: center;
+                gap: 2vh;
+            }
+            ul {
+                flex-wrap: wrap;
+                font-size: 2vh;
+            }
+            .encabezado #Logo {
+                height: 5vh;
+            }
+            h1 {
+                font-size: 4vh;
+            }
+        }
+    }
+
 }
+
+
+
+
+
+/*        
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 2vh 1vh;
+        #Logo {
+            height: 8vh;
+            padding-bottom: 0;
+        }
+
+        h1 {
+            font-size: 4vh;
+            text-align: center;
+        } 
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            gap: 1vh;
+                li a {
+                    font-size: 2.5vh;
+                }
+        }
+    }
+*/
 

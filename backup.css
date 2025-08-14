@@ -3,20 +3,7 @@
 
 /* media queries generales*/
 
-    main {
-        height: 1500px;
-    }
 
-    .encabezado {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .encabezado ul {
-        flex: 1 1 100%;
-        justify-content: center;
-        gap: 2vh;
-    }
 
     ul {
         flex-wrap: wrap;
@@ -32,34 +19,7 @@
     }
 
 
-/* media queries pagina Index*/
 
-    .articulos {
-        row-gap: 3vh;
-    }
-
-    article{
-        width: 20vh;
-        height: 35vh;
-    }
-
-    .perfume {
-        width: 90%;
-        padding: 5px;
-}
-
-    .nombre{
-        font-size: 2vh;
-}
-
-    .precio{
-        font-size: 2vh;
-    }
-
-    .boton{
-        padding: 0.3vh 1.5vw;
-        font-size: 1.5vh;
-}
 
 
 /* media queries pagina Quienes Somos*/

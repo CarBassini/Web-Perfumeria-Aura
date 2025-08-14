@@ -1,7 +1,5 @@
 @use "variables" as v;
 @use "placeholders";
-@import "header";
-@import "footer";
 
 main {
     p{
@@ -66,6 +64,7 @@ main {
             margin-left: 2vw;
         }
     }
+    
     
     @include v.mobile {
         main {

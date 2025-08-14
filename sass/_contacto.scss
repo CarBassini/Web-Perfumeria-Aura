@@ -1,9 +1,12 @@
 @use "variables" as v;
 @use "placeholders";
-@import "header";
-@import "footer";
 
 main {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
     h2{
         font-family: v.$fuenteprincipal;
         color: #000;
@@ -26,6 +29,19 @@ main {
             font-family: v.$fuenteprincipal
             font-size 3vh;
             color: black;
+        }
+    }
+
+    @include v.mobile {
+        .preguntas{
+            .pregunta{
+                font-family: v.$fuenteprincipal
+                font-size 3vh;
+            }
+            .respuesta{
+                font-family: v.$fuenteprincipal
+                font-size 2vh;
+            }
         }
     }
 

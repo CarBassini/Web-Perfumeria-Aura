@@ -7,6 +7,14 @@
     align-items: center;
 }
 
+%flc {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 %estilo-h1 {
     font-size: 8vh;
     font-weight: bold;
@@ -35,12 +43,4 @@
     font-size: 4vh;
     color: black;
     text-align: justify;
-}
-
-%estilo-a {
-    text-decoration: none !important;
-    color: #000 !important;
-    font-family: v.$fuenteprincipal;
-    font-size: 3vh;
-    font-weight: bold;
 }

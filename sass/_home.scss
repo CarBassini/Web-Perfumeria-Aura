@@ -1,13 +1,11 @@
 @use "variables" as v;
 @use "placeholders";
-@import "header";
-@import "footer";
 
 main {
     h2{
     font-family: v.$fuenteprincipal;
     @extend %estilo-h2;
-}
+    }
 
     .articulos {
         display: grid;
@@ -83,28 +81,9 @@ main {
     }
 
     @include v.mobile {
-        main {
-            .articulos {
-                row-gap: 3vh;
-                article{
-                    width: 20vh;
-                    height: 35vh;
-                    .perfume {
-                        width: 90%;
-                        padding: 5px;
-                    }
-                    .nombre{
-                        font-size: 2vh;
-                    }
-                    .precio{
-                        font-size: 2vh;
-                    }
-                    .boton{
-                        padding: 0.3vh 1.5vw;
-                        font-size: 1.5vh;
-                    }
-                }
-            }
+        .articulos {
+            grid-template-columns: 1fr;
+            row-gap: 3vh;
         }
     }
 

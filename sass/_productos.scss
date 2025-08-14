@@ -1,7 +1,5 @@
 @use "variables" as v;
 @use "placeholders";
-@import "header";
-@import "footer";
 
 main {
     h3 {
@@ -93,30 +91,17 @@ main {
         }
     }
 
+
     @include v.mobile {
         main {
             .articulos {
+                grid-template-columns: 1fr;
                 row-gap: 3vh;
-                article{
-                    width: 20vh;
-                    height: 35vh;
-                    .perfume {
-                        width: 90%;
-                        padding: 5px;
-                    }
-                    .nombre{
-                        font-size: 2vh;
-                    }
-                    .precio{
-                        font-size: 2vh;
-                    }
-                    .boton{
-                        padding: 0.3vh 1.5vw;
-                        font-size: 1.5vh;
-                    }
-                }
             }
         }
     }
 
 }
+
+
+
