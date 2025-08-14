@@ -10,7 +10,10 @@ main {
     h2{
         font-family: v.$fuenteprincipal;
         color: #000;
-        @extend %estilo-h2; 
+        font-weight: bold;
+        font-size: 5vh;
+        padding-top: 5vh;
+        padding-left: 2vw;
     }
 
     .preguntas{
