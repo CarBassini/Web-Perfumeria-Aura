@@ -57,29 +57,27 @@ header {
 
 
     @include v.mobile {
-        header {
-            .envios #envios {
-                font-size: 1vh;
-            }
-            .encabezado {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .encabezado ul {
-                flex: 1 1 100%;
-                justify-content: center;
-                gap: 2vh;
-            }
-            ul {
-                flex-wrap: wrap;
-                font-size: 2vh;
-            }
-            .encabezado #Logo {
-                height: 5vh;
-            }
-            h1 {
-                font-size: 4vh;
-            }
+        .envios #envios {
+            font-size: 1vh;
+        }
+        .encabezado {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .encabezado ul {
+            flex: 1 1 100%;
+            justify-content: center;
+            gap: 2vh;
+        }
+        ul {
+            flex-wrap: wrap;
+            font-size: 2vh;
+        }
+        .encabezado #Logo {
+            height: 5vh;
+        }
+        h1 {
+            font-size: 4vh;
         }
     }
 

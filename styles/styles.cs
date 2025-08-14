@@ -103,26 +103,26 @@ header .encabezado ul li a {
   font-weight: bold;
 }
 @media (max-width: 430px) {
-  header .envios #envios {
+  header header .envios #envios {
     font-size: 1vh;
   }
-  header .encabezado {
+  header header .encabezado {
     flex-wrap: wrap;
     justify-content: center;
   }
-  header .encabezado ul {
+  header header .encabezado ul {
     flex: 1 1 100%;
     justify-content: center;
     gap: 2vh;
   }
-  header ul {
+  header header ul {
     flex-wrap: wrap;
     font-size: 2vh;
   }
-  header .encabezado #Logo {
+  header header .encabezado #Logo {
     height: 5vh;
   }
-  header h1 {
+  header header h1 {
     font-size: 4vh;
   }
 }
@@ -182,16 +182,16 @@ footer .redes a .rrss {
   padding: 1vh;
 }
 @media (max-width: 430px) {
-  footer {
+  footer footer {
     height: 4vh;
   }
-  footer .derechos {
+  footer footer .derechos {
     font-size: 2vh;
   }
-  footer .redes a {
+  footer footer .redes a {
     font-size: 2vh;
   }
-  footer .redes a .rrss {
+  footer footer .redes a .rrss {
     width: 3vh;
   }
 }
@@ -361,7 +361,7 @@ main .articulos article .boton:hover {
   color: #FCFCF2;
 }
 @media (max-width: 430px) {
-  main .articulos {
+  main main .articulos {
     grid-template-columns: 1fr;
     row-gap: 3vh;
   }
@@ -423,32 +423,32 @@ main .nuestrahistoria .laboratorio {
   margin-left: 2vw;
 }
 @media (max-width: 430px) {
-  main .quienessomos {
+  main main .quienessomos {
     height: 50vh;
   }
-  main .quienessomos .somos {
+  main main .quienessomos .somos {
     font-size: 4vh;
   }
-  main .quienessomos .textosomos {
+  main main .quienessomos .textosomos {
     font-size: 2vh;
   }
-  main .quienessomos .dueños {
+  main main .quienessomos .dueños {
     height: 30vh;
   }
-  main .nuestrahistoria {
+  main main .nuestrahistoria {
     height: 50vh;
     grid-template-rows: 1fr 2fr 1fr;
     margin-top: 10vh;
   }
-  main .nuestrahistoria .historia {
+  main main .nuestrahistoria .historia {
     font-size: 4vh;
   }
-  main .nuestrahistoria .laboratorio {
+  main main .nuestrahistoria .laboratorio {
     height: 40vh;
     grid-column: 1/3;
     grid-row: 3/4;
   }
-  main .nuestrahistoria .textohistoria {
+  main main .nuestrahistoria .textohistoria {
     font-size: 2vh;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -544,4 +544,4 @@ main {
   height: auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.cs.map */

@@ -93,11 +93,9 @@ main {
 
 
     @include v.mobile {
-        main {
-            .articulos {
-                grid-template-columns: 1fr;
-                row-gap: 3vh;
-            }
+        .articulos {
+            grid-template-columns: 1fr;
+            row-gap: 3vh;
         }
     }
 

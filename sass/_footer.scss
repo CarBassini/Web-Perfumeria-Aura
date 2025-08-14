@@ -34,18 +34,17 @@ footer {
     }
 
     @include v.mobile {
-        footer {
-            height: 4vh;
-            .derechos{
-                font-size: 2vh;
-            }
-            .redes a {
-                font-size: 2vh;
-                .rrss {
-                    width: 3vh;
-                }
+        height: 4vh;
+        .derechos{
+            font-size: 2vh;
+        }
+        .redes a {
+            font-size: 2vh;
+            .rrss {
+                width: 3vh;
             }
         }
     }
 
 }
+

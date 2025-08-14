@@ -67,38 +67,36 @@ main {
     
     
     @include v.mobile {
-        main {
-            .quienessomos {
-                height: 50vh;
-                .somos {
-                    font-size: 4vh;
-                }
-                .textosomos {
-                    font-size: 2vh;
-                }
-                .dueños {
-                    height: 30vh;
-                }
+        .quienessomos {
+            height: 50vh;
+            .somos {
+                font-size: 4vh;
             }
+            .textosomos {
+                font-size: 2vh;
+            }
+            .dueños {
+                height: 30vh;
+            }
+        }
 
-            .nuestrahistoria {
-                height: 50vh;
-                grid-template-rows: 1fr 2fr 1fr;
-                margin-top: 10vh;
-                .historia {
-                    font-size: 4vh;
-                }
-                .laboratorio {
-                    height: 40vh;
-                    grid-column: 1 / 3;
-                    grid-row: 3 / 4;
-                }
-                .textohistoria {
-                    font-size: 2vh;
-                    grid-column: 1 / 3;
-                    grid-row: 2 / 3;
-                    margin: 0 2vw;
-                }
+        .nuestrahistoria {
+            height: 50vh;
+            grid-template-rows: 1fr 2fr 1fr;
+            margin-top: 10vh;
+            .historia {
+                font-size: 4vh;
+            }
+            .laboratorio {
+                height: 40vh;
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+            }
+            .textohistoria {
+                font-size: 2vh;
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+                margin: 0 2vw;
             }
         }
     }
