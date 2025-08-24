@@ -5,6 +5,30 @@ main {
     form {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        label {
+            width: 50%;
+            font-family: v.$fuenteprincipal;
+            font-size: 2vh;
+            font-weight: bold;
+            padding-top: 2vh;
+        }
+        input {
+            width: 50%;
+        }
+        textarea {
+            width: 50%;
+            height: 20vh;
+        }
+        #botonenviar {
+            width: 30%;
+            font-family: v.$fuenteprincipal;
+            font-size: 2vh;
+            font-weight: bold;
+            margin: 2vh;
+            padding: 1vh;
+    }
     }
 
     h2{
@@ -22,10 +46,11 @@ main {
             @extend %estilo-p;
         }
         .pregunta{
-            font-family: v.$fuenteprincipal
-            font-size 4vh;
+            font-family: v.$fuenteprincipal;
+            font-size: 4vh;
             color: black;
             font-weight: bold;
+            padding: 4vh 0 1vh 0;
         }
 
         .respuesta{
@@ -35,15 +60,17 @@ main {
         }
     }
 
+
     @include v.mobile {
+        h2 {
+            font-size: 4vh;
+        }
         .preguntas{
             .pregunta{
-                font-family: v.$fuenteprincipal
-                font-size 3vh;
+                font-size: 2vh;
             }
             .respuesta{
-                font-family: v.$fuenteprincipal
-                font-size 2vh;
+                font-size: 2vh;
             }
         }
     }

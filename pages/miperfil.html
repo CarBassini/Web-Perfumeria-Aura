@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../styles/styles.css">
 
   <title>Perfumería Aura - Mi Perfil</title>
@@ -22,20 +24,30 @@
       </a>
       <h1>Perfumería Aura</h1>
 
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/miperfil.html">Mi Perfil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <div class="container-fluid justify-content-around">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/miperfil.html">Mi Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     </section>
 
   </header>
@@ -63,9 +75,9 @@
 
       <div class="dato genero">
         <label>Género:</label>
-        <input id="genero" type="radio" name="genero">Masculino
-        <input id="genero" type="radio" name="genero">Femenino
-        <input id="genero" type="radio" name="genero">Prefiero no decirlo
+        <input id="genero" type="radio" name="Masculino">Masculino
+        <input id="genero" type="radio" name="Femenino">Femenino
+        <input id="genero" type="radio" name="Prefiero no decirlo">Prefiero no decirlo
       </div>
 
       <div class="dato email">
@@ -78,7 +90,7 @@
         <input type="password">
       </div>
 
-      <input class="registro" type="button" value="Registrarme">
+      <input class="botonregistro" type="button" value="Registrarme">
 
     </form>
 
@@ -86,24 +98,39 @@
 
   <footer>
 
-    <p class="derechos"> Derechos Reservados</p>
+    <section class="contactate">
+      <h4> Contactate con Nosotros </h4>
+      <div class="contacto">
+        <img class="email" src="../assets/email.png" alt="Email">
+        <p class="contactar">info@aura.com.ar</p>
+      </div>
+      <div class="contacto">
+        <img class="telefono" src="../assets/telefono.png" alt="Telefono">
+        <p class="contactar">11-45678934</p>
+      </div>
+    </section>
 
-    <nav>
-      <a href="https://www.facebook.com/" target="_blank">
-        <img class="rrss" src="../assets/Facebook.png" alt="Logo Facebook">
-      </a>
+    <section class="redessociales">
+      <p class="derechos"> © 2025 Perfumería Aura. Todos los derechos reservados.</p>
 
-      <a href="https://www.instagram.com/" target="_blank">
-        <img class="rrss" src="../assets/Instagram.png" alt="Logo Instagram">
-      </a>
+      <nav class="redes">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img class="rrss" src="../assets/Facebook.png" alt="Logo Facebook">
+        </a>
 
-      <a href="https://https://x.com/" target="_blank">
-        <img class="rrss" src="../assets/X.png" alt="Logo X">
-      </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img class="rrss" src="../assets/Instagram.png" alt="Logo Instagram">
+        </a>
 
-    </nav>
+        <a href="https://https://x.com/" target="_blank">
+          <img class="rrss" src="../assets/X.png" alt="Logo X">
+        </a>
+      </nav>
+    </section>
 
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 </html>

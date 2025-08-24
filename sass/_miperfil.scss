@@ -12,41 +12,71 @@ main {
     }
 
     .perfil {
-        height: 70vh;
-        width: 80vw;
-        background-color: v.$colorsecundario;
-        border-style: ridge;
-        border-radius: 15px;
         display: block;
-        padding: 2vw;
+        height: auto;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
         margin: auto;
-        .dato {
+        label {
+            width: 80%;
             font-family: v.$fuenteprincipal;
-            font-size: 3vh;
-            padding: 2vh;
+            font-size: 2vh;
+            font-weight: bold;
+            padding-top: 2vh;
         }
-        .registro {
+        input {
+            width: 80%;
+        }
+        .botonregistro {
+            width: 30%;
             font-family: v.$fuenteprincipal;
-            font-size: 3vh;
-            margin-top: 4vh;
-            margin-left: 6vw;
+            font-size: 2vh;
+            font-weight: bold;
+            margin: 2vh 35vh;
             padding: 1vh;
+            align-self: center;
+        }
+        .genero {
+            width: 50vw;
+        }
+        #genero {
+            width: 10%;
+            justify-items: start;
+            margin-left: 10vh;
         }
     }
 
     @include v.mobile {
         h2{
-            font-size: 3vh;
+            font-size: 2vh;
             padding-top: 3vh;
             padding-left: 1vw;
         }
-        .dato {
-            font-size: 2vh;
-        }
-        .registro {
-            font-size: 2vh;
+        .perfil {
+            .dato {
+                margin-left: 1vh;
+                width: 100%;
+                font-size: 2vh;
+                flex-direction: row;
+            }
+            .registro {
+                margin-left: 1vh;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                font-size: 3vh;
+            }
+            .botonregistro {
+                margin: 2vh 10vh;
+            }
+            .genero {
+                display: block;
+                margin-right: 7vh;
+            }
+            #genero {
+                margin-left: 4vh;
+            }
         }
     }
-
 
 }

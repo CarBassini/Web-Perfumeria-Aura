@@ -30,7 +30,6 @@ footer, header .encabezado {
 }
 
 header .encabezado h1 {
-  font-size: 8vh;
   font-weight: bold;
   padding: 2vh;
   flex: 1;
@@ -84,18 +83,29 @@ header .encabezado #Logo {
 header .encabezado h1 {
   font-family: Garamond Italic;
   color: #8D253E;
+  font-size: 8vh;
 }
-header .encabezado ul {
-  display: flex;
-  gap: 0.5vh;
-  padding: 1%;
+header .encabezado .navbar {
   width: 40%;
-  height: 3vh;
+  padding: 0.5rem;
 }
-header .encabezado ul li {
+header .encabezado .navbar .navbar-collapse {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  z-index: 1000;
+}
+header .encabezado .navbar .nav-link {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+}
+header .encabezado .navbar li {
   list-style: none;
 }
-header .encabezado ul li a {
+header .encabezado .navbar li a {
   text-decoration: none;
   color: #000;
   font-family: Garamond;
@@ -103,96 +113,131 @@ header .encabezado ul li a {
   font-weight: bold;
 }
 @media (max-width: 430px) {
-  header .envios #envios {
-    font-size: 1vh;
-  }
   header .encabezado {
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
-  header .encabezado ul {
-    flex: 1 1 100%;
-    justify-content: center;
-    gap: 2vh;
-  }
-  header ul {
-    flex-wrap: wrap;
-    font-size: 2vh;
+  header .encabezado h1 {
+    font-size: 3vh;
+    text-align: center;
   }
   header .encabezado #Logo {
-    height: 5vh;
+    height: 8vh;
   }
-  header h1 {
-    font-size: 4vh;
+  header .navbar {
+    width: 100%;
+  }
+  header .navbar .navbar-collapse {
+    width: 100%;
+    left: 0;
+    font-size: 1vh;
+  }
+  header .navbar .nav-link {
+    font-size: 2.5vh !important;
+    padding: 0.5rem;
   }
 }
 
-/*        
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 2vh 1vh;
-        #Logo {
-            height: 8vh;
-            padding-bottom: 0;
-        }
-
-        h1 {
-            font-size: 4vh;
-            text-align: center;
-        } 
-
-        ul {
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            gap: 1vh;
-                li a {
-                    font-size: 2.5vh;
-                }
-        }
-    }
-*/
 footer {
   background-color: #8D253E;
   width: 100%;
-  height: 7vh;
+  height: auto;
 }
-footer .derechos {
+footer .contactate {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+}
+footer .contactate h4 {
+  font-family: Garamond;
+  font-size: 4vh;
+  font-weight: bold;
+  padding-top: 3vh;
+  color: #000;
+}
+footer .contactate .contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .contactate .contacto .email {
+  width: auto;
+  height: 3vh;
+}
+footer .contactate .contacto .telefono {
+  width: auto;
+  height: 3vh;
+}
+footer .contactate .contacto .contactar {
+  font-family: Garamond;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #000;
+  padding: 1vh;
+  align-items: flex-start;
+  margin: 0;
+}
+footer .redessociales {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+footer .redessociales .derechos {
   font-family: Garamond;
   font-size: 3vh;
   color: black;
   font-weight: bold;
   margin: auto;
 }
-footer .redes {
+footer .redessociales .redes {
   margin-right: 3vw;
 }
-footer .redes a {
+footer .redessociales .redes a {
   text-decoration: none;
   color: #000;
   font-family: Garamond;
   font-size: 3vh;
   font-weight: bold;
 }
-footer .redes a .rrss {
-  width: 5vh;
-  height: auto;
+footer .redessociales .redes a .rrss {
+  width: auto;
+  height: 7vh;
   padding: 1vh;
+}
+footer .redessociales .redes a .rrss:hover {
+  height: 8vh;
 }
 @media (max-width: 430px) {
   footer {
-    height: 4vh;
+    height: auto;
   }
-  footer .derechos {
+  footer .contactate h4 {
+    font-size: 3vh;
+    padding-top: 2vh;
+  }
+  footer .contactate .contacto .email {
+    height: 2vh;
+  }
+  footer .contactate .contacto .telefono {
+    height: 2vh;
+  }
+  footer .contactate .contacto .contactar {
     font-size: 2vh;
   }
-  footer .redes a {
+  footer .redessociales {
+    align-items: center;
+  }
+  footer .redessociales .derechos {
+    font-size: 2vh;
+    margin-left: 1vh;
+  }
+  footer .redessociales .redes a {
     font-size: 2vh;
   }
-  footer .redes a .rrss {
-    width: 3vh;
+  footer .redessociales .redes a .rrss {
+    height: 6vh;
   }
 }
 
@@ -217,7 +262,7 @@ main .articulos article {
   padding: 2vh;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 60% 15% 15% 10%;
+  grid-template-rows: 50% 20% 20% 10%;
 }
 main .articulos article .perfume {
   width: 80%;
@@ -272,8 +317,28 @@ main .articulos article .boton:hover {
 }
 @media (max-width: 430px) {
   main .articulos {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 3vh;
+  }
+  main .articulos article {
+    width: 90%;
+    height: 40vh;
+    border-radius: 10px;
+    margin: 3vw;
+    padding: 1vh;
+  }
+  main .articulos article .perfume {
+    width: 90%;
+    padding: 1vh;
+  }
+  main .articulos article .nombre {
+    font-size: 2.5vh;
+  }
+  main .articulos article .precio {
+    font-size: 2.5vh;
+  }
+  main .articulos article .boton {
+    padding: 0.2vh 2vw;
   }
 }
 
@@ -361,9 +426,33 @@ main .articulos article .boton:hover {
   color: #FCFCF2;
 }
 @media (max-width: 430px) {
+  main h3 {
+    height: 10vh;
+    font-size: 3vh;
+  }
   main .articulos {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 3vh;
+  }
+  main .articulos article {
+    width: 90%;
+    height: 40vh;
+    border-radius: 10px;
+    margin: 3vw;
+    padding: 1vh;
+  }
+  main .articulos article .perfume {
+    width: 90%;
+    padding: 1vh;
+  }
+  main .articulos article .nombre {
+    font-size: 2.5vh;
+  }
+  main .articulos article .precio {
+    font-size: 2.5vh;
+  }
+  main .articulos article .boton {
+    padding: 0.2vh 2vw;
   }
 }
 
@@ -372,19 +461,19 @@ main h2 {
   color: #000;
 }
 main .quienessomos {
-  height: 80vh;
+  height: auto;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  column-gap: 3vw;
+  row-gap: 1vh;
   align-items: center;
 }
 main .quienessomos .somos {
   font-size: 5vh;
   grid-column: 1/3;
   grid-row: 1/2;
-  align-self: end;
+  justify-self: center;
 }
 main .quienessomos .textosomos {
   grid-column: 1/2;
@@ -392,23 +481,24 @@ main .quienessomos .textosomos {
   margin-left: 2vw;
 }
 main .quienessomos .dueños {
-  height: 50vh;
+  height: 60vh;
   width: auto;
   grid-column: 2/3;
   grid-row: 2/3;
+  margin: auto;
 }
 main .nuestrahistoria {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  row-gap: 1vh;
   align-items: center;
 }
 main .nuestrahistoria .historia {
   font-size: 5vh;
   grid-column: 1/3;
   grid-row: 1/2;
+  justify-self: center;
 }
 main .nuestrahistoria .textohistoria {
   grid-column: 2/3;
@@ -416,16 +506,13 @@ main .nuestrahistoria .textohistoria {
   margin-right: 2vw;
 }
 main .nuestrahistoria .laboratorio {
-  height: 50vh;
+  height: 40vh;
   width: auto;
   grid-column: 1/2;
   grid-row: 2/3;
   margin-left: 2vw;
 }
 @media (max-width: 430px) {
-  main .quienessomos {
-    height: 50vh;
-  }
   main .quienessomos .somos {
     font-size: 4vh;
   }
@@ -434,25 +521,26 @@ main .nuestrahistoria .laboratorio {
   }
   main .quienessomos .dueños {
     height: 30vh;
+    margin: auto;
   }
   main .nuestrahistoria {
-    height: 50vh;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
     margin-top: 10vh;
   }
   main .nuestrahistoria .historia {
+    height: 3vh;
     font-size: 4vh;
   }
   main .nuestrahistoria .laboratorio {
     height: 40vh;
     grid-column: 1/3;
-    grid-row: 3/4;
   }
   main .nuestrahistoria .textohistoria {
     font-size: 2vh;
-    grid-column: 1/3;
-    grid-row: 2/3;
     margin: 0 2vw;
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 }
 
@@ -465,44 +553,97 @@ main h2 {
   padding-left: 2vw;
 }
 main .perfil {
-  height: 70vh;
-  width: 80vw;
-  background-color: #FCFCF2;
-  border-style: ridge;
-  border-radius: 15px;
   display: block;
-  padding: 2vw;
+  height: auto;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
-main .perfil .dato {
+main .perfil label {
+  width: 80%;
   font-family: Garamond;
-  font-size: 3vh;
-  padding: 2vh;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-top: 2vh;
 }
-main .perfil .registro {
+main .perfil input {
+  width: 80%;
+}
+main .perfil .botonregistro {
+  width: 30%;
   font-family: Garamond;
-  font-size: 3vh;
-  margin-top: 4vh;
-  margin-left: 6vw;
+  font-size: 2vh;
+  font-weight: bold;
+  margin: 2vh 35vh;
   padding: 1vh;
+  align-self: center;
+}
+main .perfil .genero {
+  width: 50vw;
+}
+main .perfil #genero {
+  width: 10%;
+  justify-items: start;
+  margin-left: 10vh;
 }
 @media (max-width: 430px) {
   main h2 {
-    font-size: 3vh;
+    font-size: 2vh;
     padding-top: 3vh;
     padding-left: 1vw;
   }
-  main .dato {
+  main .perfil .dato {
+    margin-left: 1vh;
+    width: 100%;
     font-size: 2vh;
+    flex-direction: row;
   }
-  main .registro {
-    font-size: 2vh;
+  main .perfil .registro {
+    margin-left: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 3vh;
+  }
+  main .perfil .botonregistro {
+    margin: 2vh 10vh;
+  }
+  main .perfil .genero {
+    display: block;
+    margin-right: 7vh;
+  }
+  main .perfil #genero {
+    margin-left: 4vh;
   }
 }
 
 main form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+main form label {
+  width: 50%;
+  font-family: Garamond;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-top: 2vh;
+}
+main form input {
+  width: 50%;
+}
+main form textarea {
+  width: 50%;
+  height: 20vh;
+}
+main form #botonenviar {
+  width: 30%;
+  font-family: Garamond;
+  font-size: 2vh;
+  font-weight: bold;
+  margin: 2vh;
+  padding: 1vh;
 }
 main h2 {
   font-family: Garamond;
@@ -516,20 +657,25 @@ main .preguntas {
   margin-left: 2vw;
 }
 main .preguntas .pregunta {
-  font-family: Garamond font-size 4vh;
+  font-family: Garamond;
+  font-size: 4vh;
   color: black;
   font-weight: bold;
+  padding: 4vh 0 1vh 0;
 }
 main .preguntas .respuesta {
   font-family: Garamond font-size 3vh;
   color: black;
 }
 @media (max-width: 430px) {
+  main h2 {
+    font-size: 4vh;
+  }
   main .preguntas .pregunta {
-    font-family: Garamond font-size 3vh;
+    font-size: 2vh;
   }
   main .preguntas .respuesta {
-    font-family: Garamond font-size 2vh;
+    font-size: 2vh;
   }
 }
 
