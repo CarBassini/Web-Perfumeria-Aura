@@ -12,14 +12,16 @@ main {
             font-family: v.$fuenteprincipal;
             font-size: 2vh;
             font-weight: bold;
-            padding-top: 2vh;
+            padding-top: 3vh;
         }
         input {
             width: 50%;
+            border: solid #b3b0b079;
         }
         textarea {
             width: 50%;
             height: 20vh;
+            border: solid #b3b0b079;
         }
         #botonenviar {
             width: 30%;
